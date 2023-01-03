@@ -23,7 +23,7 @@ public class BookBuyerAgent extends Agent {
             targetBookTitle = (String) args[0];
             System.out.println("Намагаюсь купити: " + targetBookTitle);
 
-            addBehaviour(new TickerBehaviour(this, 5000) {
+            addBehaviour(new TickerBehaviour(this, 25000) {
                 protected void onTick() {
                     System.out.println("Trying to buy " + targetBookTitle);
                     // Update the list of seller agents
